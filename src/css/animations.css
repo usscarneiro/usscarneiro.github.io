@@ -1,0 +1,30 @@
+/*
+* Animations
+*/
+
+@keyframes text-box {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24rem;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: #d4d4d4cc;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

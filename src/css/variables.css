@@ -1,0 +1,9 @@
+:root {
+  --green: #38EE38;
+  --blue: #3838EE;
+  --red: #EE3838;
+  --gradient-text: linear-gradient(to right, var(--blue), var(--red));
+  --text-color: #4D4D4D;
+  --text-highlight: #D4D4D4;
+  --background: #242424;
+}
