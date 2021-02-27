@@ -1,0 +1,112 @@
+@import url("./variables.css");
+@import url("./animations.css");
+
+:root {
+  font-size: 12px;
+  font-family: monospace, "Courier New", Courier;
+  transition: all 0.6s;
+}
+
+::selection {
+  background-color: var(--background);
+  color: var(--green);
+  -o-text-fill-color: var(--green);
+  -moz-text-fill-color: var(--green);
+  -webkit-text-fill-color: var(--green);
+}
+
+/*
+* Tag Styles
+*/
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--background);
+}
+
+h1 {
+  text-align: center;
+  background: var(--gradient-text);
+  background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+
+  font-size: 8rem;
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: fade-in ease 4s;
+}
+
+p {
+  font-size: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+
+  color: var(--text-color);
+  border-right: solid 0.8rem transparent;
+
+  animation: text-box 4s steps(25, end) 0.8s 1 normal both,
+    cursor 0.8s steps(25, end) infinite;
+
+  animation-delay: 1s;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  padding-left: .5rem;
+
+  text-decoration: none;
+  color: var(--text-highlight);
+  
+}
+
+a:hover,
+a:focus {
+  background: var(--gradient-text);
+
+  background-clip: text;
+  -o-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+
+  -o-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+a:focus {
+  text-decoration: underline var(--blue);
+}
+
+
+p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+footer img {
+  overflow: hidden;
+  width: 2rem;
+  border-radius: 50%;
+  
+}
